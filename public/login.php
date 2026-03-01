@@ -36,7 +36,7 @@
             </div>
 
             <div class="text-end mb-3">
-                <a href="#" class="text-decoration-none forgot">Esqueci minha senha</a>
+                <a href="../public/redefinir.php" class="text-decoration-none forgot">Esqueci minha senha</a>
             </div>
 
             <button type="submit" class="btn btn-hrs w-100">
