@@ -6,7 +6,7 @@
 
     <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- CSS personalizado -->
     <link rel="stylesheet" href="../assets/css/login.css">
 </head>
@@ -31,12 +31,22 @@
             </div>
 
             <div class="mb-3">
-                <label class="form-label fw-semibold">Senha</label>
-                <input type="password" name="senha" class="form-control" placeholder="Digite sua senha" required>
+            <label class="form-label fw-semibold">Senha</label>
+                <div class="input-group">
+                    <input type="password" name="senha" id="senhaLogin"
+                        class="form-control"
+                        placeholder="Digite sua senha" required>
+
+                    <span class="input-group-text"
+                        onclick="toggleSenha('senhaLogin', this)"
+                        style="cursor:pointer;">
+                        <i class="bi bi-eye"></i>
+                    </span>
+                </div>
             </div>
 
             <div class="text-end mb-3">
-                <a href="../public/redefinir.php" class="text-decoration-none forgot">Esqueci minha senha</a>
+                <a href="redefinir.php" class="text-decoration-none forgot">Esqueci minha senha</a>
             </div>
 
             <button type="submit" class="btn btn-hrs w-100">
@@ -48,6 +58,21 @@
     </div>
 
 </div>
+    <script>
+    function toggleSenha(id, element) {
+        const input = document.getElementById(id);
+        const icon = element.querySelector("i");
 
+        if (input.type === "password") {
+            input.type = "text";
+            icon.classList.remove("bi-eye");
+            icon.classList.add("bi-eye-slash");
+        } else {
+            input.type = "password";
+            icon.classList.remove("bi-eye-slash");
+            icon.classList.add("bi-eye");
+        }
+    }
+    </script>
 </body>
 </html>
