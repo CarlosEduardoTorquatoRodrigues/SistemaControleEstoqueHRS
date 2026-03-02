@@ -2,19 +2,20 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - HRS</title>
 
     <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
     <!-- CSS personalizado -->
-    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/auth.css">
 </head>
 <body>
 
-<div class="container d-flex justify-content-center align-items-center vh-100">
-
-    <div class="login-box shadow">
+<body class="d-flex justify-content-center align-items-center auth-container">
+    <div class="auth-box shadow">
 
         <!-- Logo -->
         <div class="text-center mb-4">

@@ -6,92 +6,97 @@ body {
 /* NAVBAR */
 .navbar-custom {
     background-color: #f1f1f1;
-    padding: 15px 30px;
+    padding: 10px 0;
 }
 
-/* Container central */
-.nav-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
+.navbar-nav {
+    gap: 10px;
 }
 
-/* Links */
-.nav-links a {
-    position: relative;
-    text-decoration: none;
-    color: #5a3f2c;
+.navbar-nav .nav-link {
     font-weight: 600;
-    padding: 8px 12px;
+    color: #5a3f2c !important;
+    padding: 8px 14px;
+    border-radius: 8px;
     transition: all 0.3s ease;
 }
 
-/* Linha animada embaixo */
-.nav-links a::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 0;
-    height: 3px;
-    background-color: #6b4c35;
-    transition: all 0.3s ease;
-    transform: translateX(-50%);
+/* HOVER */
+.navbar-nav .nav-link:hover {
+    background-color: #e4d6c8;
 }
 
-/* Hover */
-.nav-links a:hover {
-    color: #6b4c35;
-}
-
-.nav-links a:hover::after {
-    width: 100%;
-}
-
-/* Ativo */
-.nav-links .active {
+/* ATIVO (QUADRADO MARROM) */
+.navbar-nav .nav-link.active {
     background-color: #6b4c35;
     color: white !important;
-    border-radius: 8px;
 }
 
 /* TÍTULO */
 .page-title {
     text-align: center;
-    margin: 40px 0;
+    margin: 30px 0;
     font-weight: bold;
     color: #6b4c35;
 }
 
-/* CARD FORM */
+/* CARD */
 .card-custom {
     background-color: #f3f3f3;
-    padding: 30px;
+    padding: 25px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+/* BOTÃO */
 .btn-brown {
     background-color: #6b4c35;
     color: white;
     border-radius: 8px;
     padding: 8px 20px;
     border: none;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .btn-brown:hover {
     background-color: #5a3f2c;
+    color: white;
 }
 
 /* TABELA */
-.table-custom thead {
-    background-color: #d8c7b3;
-}
-
 .table-container {
     background-color: #f3f3f3;
     padding: 20px;
     border-radius: 15px;
-    margin-top: 40px;
+    margin-top: 30px;
+}
+
+/* ===== MOBILE AJUSTE ===== */
+@media (max-width: 961px) {
+
+    /* Título */
+    .page-title {
+        font-size: 20px;
+    }
+
+    /* Card */
+    .card-custom {
+        padding: 20px;
+    }
+
+    /* NAVBAR MOBILE */
+    .navbar-nav .nav-link {
+        font-size: 18px;
+        padding: 12px;
+        text-align: center;
+    }
+
+    .navbar-collapse {
+        background-color: #f1f1f1;
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
 }

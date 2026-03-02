@@ -4,10 +4,12 @@ body {
     margin: 0;
 }
 
+/* Container central */
 .auth-container {
     min-height: 100vh;
 }
 
+/* Card padrão autenticação */
 .auth-box {
     background-color: #f3f3f3;
     padding: 40px;
@@ -16,10 +18,18 @@ body {
     max-width: 420px;
 }
 
+/* Logo */
 .logo {
     width: 180px;
 }
 
+/* Inputs */
+.form-control {
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Botão padrão */
 .btn-hrs {
     background-color: #6b4c35;
     color: #fff;
@@ -34,6 +44,17 @@ body {
     color: #fff;
 }
 
+/* Link esqueci senha */
+.forgot {
+    font-size: 14px;
+    color: #333;
+}
+
+.forgot:hover {
+    color: #6b4c35;
+}
+
+/* Regras de senha */
 .password-rules {
     font-size: 14px;
     margin-top: 10px;
@@ -42,4 +63,11 @@ body {
 .password-rules ul {
     padding-left: 18px;
     margin-bottom: 0;
+}
+
+/* Ajuste Mobile */
+@media (max-width: 768px) {
+    .auth-box {
+        padding: 25px;
+    }
 }

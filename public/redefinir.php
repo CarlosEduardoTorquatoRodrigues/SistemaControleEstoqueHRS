@@ -11,7 +11,7 @@
 
 </head>
 
-<body class="d-flex justify-content-center align-items-center auth-container">
+<body class="d-flex justify-content-center align-items-center min-vh-100">
 
 <div class="auth-box shadow">
 

@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Editar Local - HRS</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -12,26 +13,52 @@
 <body>
 
 <!-- NAVBAR -->
-<div class="navbar-custom d-flex justify-content-between align-items-center">
+<nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+<div class="container-fluid">
 
+<!-- LOGO -->
+<a class="navbar-brand" href="#">
     <img src="../assets/img/logo.png" width="120">
+</a>
 
-    <div class="nav-links">
-        <a href="#">Dashboard</a>
-        <a href="#">Movimentação</a>
-        <a href="#" class="active">Local de Estoque</a>
-        <a href="#">Relatórios</a>
-        <a href="#">Estoque</a>
-        <a href="#">Fornecedor</a>
-        <a href="#">Usuários</a>
-    </div>
+<!-- BOTÃO HAMBÚRGUER -->
+<button class="navbar-toggler" type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
 
-    <div class="text-end">
-        <strong>Admin</strong><br>
-        <a href="#" class="btn btn-danger btn-sm mt-1">Sair</a>
-    </div>
+<!-- MENU -->
+<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+<ul class="navbar-nav text-center">
+
+<li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Movimentação</a></li>
+<li class="nav-item"><a class="nav-link active" href="#">Local de Estoque</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Relatórios</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Estoque</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Fornecedor</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Usuários</a></li>
+
+</ul>
+
+<!-- USUÁRIO MOBILE -->
+<div class="text-center mt-3 d-lg-none">
+    <strong>Admin</strong><br>
+    <a href="login.php" class="btn btn-danger btn-sm mt-2">Sair</a>
+</div>
 
 </div>
+
+<!-- USUÁRIO DESKTOP -->
+<div class="text-end d-none d-lg-block">
+    <strong>Admin</strong><br>
+    <a href="login.php" class="btn btn-danger btn-sm mt-1">Sair</a>
+</div>
+
+</div>
+</nav>
 
 <!-- TÍTULO -->
 <h2 class="page-title">EDITAR LOCAL DE ESTOQUE</h2>
@@ -52,5 +79,6 @@
 
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
