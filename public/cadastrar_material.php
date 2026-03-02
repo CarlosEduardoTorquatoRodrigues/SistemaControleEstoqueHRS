@@ -72,8 +72,8 @@ include '../includes/header.php';
             </div>
 
             <div class="d-flex justify-content-between">
-                <a href="#" class="btn btn-brown">Cancelar</a>
-                <button type="submit" class="btn btn-brown">Cadastrar</button>
+                <a href="estoque.php" class="btn btn-brown">Cancelar</a>
+                <a href="estoque.php" class="btn btn-brown">Cadastrar</a>
             </div>
 
         </form>

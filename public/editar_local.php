@@ -19,7 +19,7 @@ include '../includes/header.php';
         <input type="text" class="form-control mb-4" value="Deposito Principal">
 
         <a href="local_estoque.php" class="btn-brown me-2 text-decoration-none" >Cancelar</a>
-        <a href="#" class="btn-brown text-decoration-none">Atualizar</a>
+        <a href="local_estoque.php" class="btn-brown text-decoration-none">Atualizar</a>
 
     </div>
 

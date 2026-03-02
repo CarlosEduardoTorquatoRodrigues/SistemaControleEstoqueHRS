@@ -56,7 +56,7 @@ Estoque
 </li>
 
 <li class="nav-item">
-<a class="nav-link <?= ($activePage == 'fornecedor') ? 'active' : '' ?>" href="fornecedor.php">
+<a class="nav-link <?= ($activePage == 'fornecedor') ? 'active' : '' ?>" href="fornecedores.php">
 Fornecedor
 </a>
 </li>
